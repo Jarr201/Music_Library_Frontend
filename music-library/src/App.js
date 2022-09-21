@@ -7,6 +7,11 @@ function App() {
 
   const[songs, setSongs] = useState([]);
 
+  function addNewSong(song) {
+    let tempSongs = [...songs, song];
+    setSongs(tempSongs)
+  }
+
   useEffect(() => {
     getAllSongs();
   }, [])
@@ -16,7 +21,7 @@ function App() {
     setSongs(response.data);
   }
 
-  async function createSong(newSong){
+  async function addNewSong(newSong){
     let response = await axios.post('http://127.0.0.1:8000/api/songs/', newSong);
     if(response.status === 201){
       await getAllSongs();
@@ -35,7 +40,7 @@ function App() {
     //     <small className='text-muted'>Box</small></h3>
         <div>
           <DisplayMusic parentSongs={songs} />
-          <AddSongForm />
+          <AddSongForm addNewSongProperty={addNewSong}/>
         </div>
     //   </div>
     // </div>
