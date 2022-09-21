@@ -27,21 +27,17 @@ function App() {
   //   setSongs(response.data);
   // }
 
-//   return (
-//     <div className='container-fluid'>
-//       <div className='row'>
-//         <h3 style={{margin: '1em'}}>Music
-//         <small className='text-muted'>Box</small></h3>
-//       </div>
-//     </div>
-// )
-
-return (
-  <div>
-    <DisplayMusic parentSongs={songs} />
-  </div>
-);
-
-};
+  return (
+    // <div className='container-fluid'>
+    //   <div className='row'>
+    //     <h3 style={{margin: '1em'}}>Music
+    //     <small className='text-muted'>Box</small></h3>
+        <div>
+          <DisplayMusic parentSongs={songs} />
+        </div>
+    //   </div>
+    // </div>
+  );
+}
 
 export default App;
