@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import DisplayMusic from './Components/DisplayMusic.jsx/DisplayMusic';
+import AddSongForm from './Components/AddSongForm/AddSongForm';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
     //     <small className='text-muted'>Box</small></h3>
         <div>
           <DisplayMusic parentSongs={songs} />
+          <AddSongForm />
         </div>
     //   </div>
     // </div>
