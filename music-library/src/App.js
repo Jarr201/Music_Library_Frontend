@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import DisplayMusic from './Components/DisplayMusic.jsx/DisplayMusic';
 
 function App() {
 
@@ -25,6 +26,22 @@ function App() {
   //   let response = await axios.delete('http://127.0.0.1:8000/api/songs/');
   //   setSongs(response.data);
   // }
-}
+
+//   return (
+//     <div className='container-fluid'>
+//       <div className='row'>
+//         <h3 style={{margin: '1em'}}>Music
+//         <small className='text-muted'>Box</small></h3>
+//       </div>
+//     </div>
+// )
+
+return (
+  <div>
+    <DisplayMusic parentSongs={songs} />
+  </div>
+);
+
+};
 
 export default App;
