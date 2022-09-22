@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import DisplayMusic from './Components/DisplayMusic.jsx/DisplayMusic';
 import AddSongForm from './Components/AddSongForm/AddSongForm';
+import SearchBar from './Components/SearchBar.jsx/SearchBar';
 import './App.css';
 
 function App() {
@@ -38,11 +39,11 @@ function App() {
     <div className='container-fluid'>
       <div className='row'>
         <div class="d-flex justify-content-center">
-        
          <div class="d-flex p-2 bd-highlight">
           <div className='border-box'>
           <h3 style={{margin: '1em'}}>The Vibe
           <small className='text-muted'>Villa</small></h3>
+          <SearchBar parentSongs={songs}/>
           <DisplayMusic parentSongs={songs} />
         </div>
           </div>
