@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import DisplayMusic from './Components/DisplayMusic.jsx/DisplayMusic';
 import AddSongForm from './Components/AddSongForm/AddSongForm';
+import './App.css';
 
 function App() {
 
@@ -34,17 +35,25 @@ function App() {
   // }
 
   return (
-    // <div className='container-fluid'>
-    //   <div className='row'>
-    //     <h3 style={{margin: '1em'}}>Music
-    //     <small className='text-muted'>Box</small></h3>
-        <div>
+    <div className='container-fluid'>
+      <div className='row'>
+        
+        <div class="d-flex justify-content-center">
+         <div class="d-flex p-2 bd-highlight">
+          <div className='border-box'>
           <DisplayMusic parentSongs={songs} />
-          <AddSongForm addNewSongProperty={addNewSong}/>
         </div>
-    //   </div>
-    // </div>
-  );
-}
+          </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+          <div className='border-box'>
+          <AddSongForm addNewSongProperty={addNewSong}/>
+          </div>
+        </div>
+      </div>
+    </div>
+  )};
+
 
 export default App;
