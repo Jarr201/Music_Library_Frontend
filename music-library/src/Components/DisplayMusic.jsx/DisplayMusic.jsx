@@ -1,8 +1,8 @@
 
 const DisplayMusic = (props) => {
     return ( 
-        <table>
-            <thead>
+        <table className="table table-hover table-borderless">
+            <thead className="thead-dark">
             <tr>
                 <th>Title</th>
                 <th>Artist</th>

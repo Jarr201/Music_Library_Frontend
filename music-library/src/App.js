@@ -38,8 +38,11 @@ function App() {
     <div className='container-fluid'>
       <div className='row'>
         <div class="d-flex justify-content-center">
+        
          <div class="d-flex p-2 bd-highlight">
           <div className='border-box'>
+          <h3 style={{margin: '1em'}}>The Vibe
+          <small className='text-muted'>Villa</small></h3>
           <DisplayMusic parentSongs={songs} />
         </div>
           </div>
