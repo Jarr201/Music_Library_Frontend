@@ -37,7 +37,6 @@ function App() {
   return (
     <div className='container-fluid'>
       <div className='row'>
-        
         <div class="d-flex justify-content-center">
          <div class="d-flex p-2 bd-highlight">
           <div className='border-box'>
@@ -45,7 +44,6 @@ function App() {
         </div>
           </div>
           </div>
-
           <div class="d-flex justify-content-center">
           <div className='border-box'>
           <AddSongForm addNewSongProperty={addNewSong}/>
